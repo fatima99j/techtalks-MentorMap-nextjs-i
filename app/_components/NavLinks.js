@@ -1,0 +1,26 @@
+import Link from "next/link";
+import React from "react";
+
+export default function NavLinks() {
+  const commonClass =
+    "text-gray-800 font-medium hover:text-primary-600 transition-colors duration-300";
+
+  return (
+    <nav className="hidden lg:flex items-center justify-center">
+      <ul className="flex gap-4 justify-center items-center">
+        <a href="#how-it-works" className={commonClass}>
+          <li>How It Works</li>
+        </a>
+        <Link href="/mentors" className={commonClass}>
+          <li>Find Mentors</li>
+        </Link>
+        <a href="#be-mentor" className={commonClass}>
+          <li>Become A Mentor</li>
+        </a>
+        <Link href="/about" className={commonClass}>
+          <li>About Us</li>
+        </Link>
+      </ul>
+    </nav>
+  );
+}
