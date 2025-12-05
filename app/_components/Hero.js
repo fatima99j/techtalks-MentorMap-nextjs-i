@@ -3,10 +3,13 @@ import hero from "@/public/hero.webp";
 
 import Image from "next/image";
 import HeroText from "./HeroText";
+import HeroCurveBackground from "./HeroCurveBackground";
 
 export default function Hero() {
   return (
     <section className="relative gradient-section min-h-screen">
+      <HeroCurveBackground />
+
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 xl:gap-6 max-w-400 mx-auto px-8">
         {/* Left Side */}
         <HeroText />
