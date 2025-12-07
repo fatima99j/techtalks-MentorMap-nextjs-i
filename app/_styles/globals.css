@@ -2,7 +2,7 @@
 @config "../../tailwind.config.js";
 
 .clip-diagonal {
-  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 @media (max-width: 1024px) {
@@ -11,10 +11,8 @@
   }
 }
 
-.gradient-section {
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  margin-top: -3rem;
-  background-image: linear-gradient(to bottom right, #e0e7ff, #f7f7f7, #ecfeff);
+.container--common {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
