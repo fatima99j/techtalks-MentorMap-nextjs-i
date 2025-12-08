@@ -11,6 +11,8 @@ const VARIATION_CLASSES = {
   secondary:
     "bg-none hover:bg-indigo-100 text-primary-600 border-2 border-primary-600",
   tertiary: "bg-primary-100 hover:bg-primary-200 text-primary-600",
+  tertiaryBorder:
+    "bg-transparent text-primary-100 border-2 border-primary-100 hover:bg-primary-100 hover:text-indigo-600 transition",
 };
 
 function Button({

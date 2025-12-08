@@ -1,56 +1,29 @@
 import React from "react";
-import Button from "./Button";
+
+import Button from "../Button";
 
 export default function CTASection() {
   return (
-    <section className="w-full bg-gradient-to-br from-primary-600 to-primary-800 py-16 px-8">
-      <div className="max-w-400 mx-auto">
+    <section className="py-20 bg-gradient-to-br from-indigo-600 to-purple-600">
+      <div className="container--common">
         <div className="flex flex-col items-center text-center gap-6">
-          {/* Headline */}
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary-100 mb-6">
             Ready to Navigate Your Career Path?
           </h2>
 
-          {/* Sub-headline */}
-          <p className="text-lg md:text-xl text-white max-w-2xl">
+          <p className="text-xl text-indigo-100 mb-10 leading-relaxed max-w-3xl mx-auto">
             Join 50,000+ students who are already getting expert guidance from
             industry professionals. Your dream career is just one session away.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            {/* Get Started for Free - White background, purple border and text */}
-            <Button
-              variation="secondary"
-              size="large"
-              classes="bg-white hover:bg-primary-100 w-auto"
-            >
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <Button variation="tertiary" size="large">
               Get Started for Free
             </Button>
 
-            <Button
-              variation="primary"
-              size="large"
-              classes="border-2 border-white text-white hover:bg-primary-800 w-auto"
-            >
+            <Button variation="tertiaryBorder" size="large">
               Browse Mentors
             </Button>
-          </div>
-
-          {/* Feature List with Checkmarks */}
-          <div className="flex flex-col sm:flex-row gap-6 mt-8 justify-center items-center">
-            <div className="flex items-center gap-2 text-white">
-              <FontAwesomeIcon icon={faCheck} className="w-5 h-5" />
-              <span className="text-base">No Credit Card Required</span>
-            </div>
-            <div className="flex items-center gap-2 text-white">
-              <FontAwesomeIcon icon={faCheck} className="w-5 h-5" />
-              <span className="text-base">Free to Join</span>
-            </div>
-            <div className="flex items-center gap-2 text-white">
-              <FontAwesomeIcon icon={faCheck} className="w-5 h-5" />
-              <span className="text-base">Cancel Anytime</span>
-            </div>
           </div>
         </div>
       </div>
