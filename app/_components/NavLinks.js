@@ -8,18 +8,26 @@ export default function NavLinks() {
   return (
     <nav className="hidden lg:flex items-center justify-center">
       <ul className="flex gap-4 justify-center items-center">
-        <a href="#how-it-works" className={commonClass}>
-          <li>How It Works</li>
-        </a>
-        <Link href="/mentors" className={commonClass}>
-          <li>Find Mentors</li>
-        </Link>
-        <a href="#be-mentor" className={commonClass}>
-          <li>Become A Mentor</li>
-        </a>
-        <Link href="/about" className={commonClass}>
-          <li>About Us</li>
-        </Link>
+        <li>
+          <a href="#how-it-works" className={commonClass}>
+            How It Works
+          </a>
+        </li>
+        <li>
+          <Link href="/mentors" className={commonClass}>
+            Find Mentors
+          </Link>
+        </li>
+        <li>
+          <a href="#be-mentor" className={commonClass}>
+            Become A Mentor
+          </a>
+        </li>
+        <li>
+          <Link href="/about" className={commonClass}>
+            About Us
+          </Link>
+        </li>
       </ul>
     </nav>
   );
