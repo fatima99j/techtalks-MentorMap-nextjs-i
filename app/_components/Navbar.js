@@ -8,12 +8,11 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 w-full z-50 backdrop-blur-2xl bg-white/40 border-b border-white/30 backdrop-filter shadow-md">
+    <header className="top-0 w-full z-50">
       <div className="flex justify-between items-center px-6 md:px-8 md:py-2 max-w-400 mx-auto">
-        <div className="flex justify-between items-center gap-12">
-          <Logo />
-          <NavLinks />
-        </div>
+        <Logo />
+
+        <NavLinks />
 
         <div className="hidden lg:flex items-center justify-center gap-4">
           <Link href="/login" className="hover:text-primary-600">

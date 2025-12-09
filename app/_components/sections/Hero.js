@@ -1,23 +1,32 @@
 import React from "react";
+import Image from "next/image";
 
+import HeroImage from "@/public/hero.webp";
+import HeroBackground from "../HeroBackground";
 import HeroText from "../HeroText";
-import HeroCurveBackground from "../HeroCurveBackground";
-import HeroImage from "../HeroImage";
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-[#e0e7ff] via-[#f7f7f7] to-[#ecfeff] min-h-screen">
-      <div className="container--common !pr-0">
-        <HeroCurveBackground />
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 xl:gap-6">
-          {/* Left Side */}
+    <section className="relative">
+      <HeroBackground>
+        <div className="container--common">
           <HeroText />
 
-          {/*Right  Side */}
-          <HeroImage />
+          {/* Image */}
+          <div className="flex justify-center mt-10 pb-15 md:pb-20">
+            <div className="w-full lg:max-w-6xl mx-auto lg:translate-y-4">
+              <Image
+                src={HeroImage}
+                alt="Two professionals collaborating on a laptop – representing mentorship and career guidance"
+                className="rounded-2xl shadow-2xl object-cover "
+                priority
+                quality={100}
+                placeholder="blur"
+              />
+            </div>
+          </div>
         </div>
-      </div>
+      </HeroBackground>
     </section>
   );
 }

@@ -1,34 +1,28 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
 import Button from "./Button";
 
 export default function HeroText() {
   return (
-    <div className="w-full lg:max-w-xl pt-10 md:pt-12">
+    <div className="w-full lg:max-w-4xl mx-auto pt-12 text-center">
       <div className="flex flex-col gap-6">
-        <h1 className="font-bold text-5xl text-gray-900 tracking-tight leading-snug">
+        <h1 className="font-bold text-5xl md:text-6xl text-gray-900 tracking-tight leading-snug">
           Navigate Your Career Path with{" "}
           <span className="text-primary-600">Guidance</span>
         </h1>
-        <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-          Connect with verified industry professionals for focused mentorship
-          sessions. Get the career clarity, feedback, and confidence you need to
-          succeed.
+        <p className="text-xl max-w-3xl mx-auto text-gray-600 mb-8 leading-relaxed">
+          Connect with real professionals, book 1-on-1 sessions, and get
+          guidance from people already doing what you want to do.
         </p>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-4">
-        <Button variation="primary" size="large">
+      <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <Button variation="primary" size="large" classes="w-auto!">
           Find Your Mentor
-          <FontAwesomeIcon
-            icon={faArrowRight}
-            // size="xs"
-            className="w-4 h-4"
-          />
+          <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />
         </Button>
-        <Button variation="secondary" size="large">
+        <Button variation="secondary" size="large" classes="w-auto!">
           Become a Mentor
         </Button>
       </div>
