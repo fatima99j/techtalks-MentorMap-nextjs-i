@@ -1,18 +1,36 @@
 @import "tailwindcss";
 @config "../../tailwind.config.js";
 
-.clip-diagonal {
-  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-@media (max-width: 1024px) {
-  .clip-diagonal {
-    clip-path: none;
+@layer components {
+  .container--common {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 2rem;
   }
-}
 
-.container--common {
-  max-width: 100rem;
-  margin: 0 auto;
-  padding: 0 2rem;
+  .spinner {
+    margin: 3.2rem auto 1.6rem;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 6px solid theme("colors.primary.600");
+    border-right-color: transparent;
+    animation: rotate 1s infinite linear;
+  }
+
+  .spinner-mini {
+    margin: 0;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid theme("colors.primary.600");
+    border-right-color: transparent;
+    animation: rotate 1s infinite linear;
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
 }

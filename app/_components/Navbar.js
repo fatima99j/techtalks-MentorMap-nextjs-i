@@ -8,7 +8,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   return (
-    <header className="top-0 w-full z-50">
+    <header className="top-0 w-full z-50 bg-transparent">
       <div className="flex justify-between items-center px-6 md:px-8 md:py-2 max-w-400 mx-auto">
         <Logo />
 
