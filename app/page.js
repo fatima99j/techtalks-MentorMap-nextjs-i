@@ -3,6 +3,7 @@ import Features from "./_components/sections/Features";
 import Hero from "./_components/sections/Hero";
 import HowItWorks from "./_components/sections/HowItWorks";
 import ProblemSolution from "./_components/sections/ProblemSolution";
+import SessionTypes from "./_components/sections/SessionTypes";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Features />
       <ProblemSolution />
       <HowItWorks />
+      <SessionTypes />
       <CTASection />
     </>
   );
