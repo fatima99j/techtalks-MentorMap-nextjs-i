@@ -15,9 +15,9 @@ export default function Footer() {
           <FooterLinks />
         </div>
 
-        <div class="border-t border-gray-800 pt-8">
-          <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p class="text-gray-400 text-sm">
+        <div className="border-t border-gray-800 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-gray-400 text-sm">
               © 2024 MentorMap. All rights reserved.
             </p>
           </div>
