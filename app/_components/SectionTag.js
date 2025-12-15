@@ -9,6 +9,7 @@ const sectionTagColors = {
     bg: "bg-indigo-100",
     text: "text-indigo-700",
   },
+  cyan: { bg: "bg-cyan-100", text: "text-cyan-700" },
   purple: {
     bg: "bg-purple-100",
     text: "text-purple-700",
