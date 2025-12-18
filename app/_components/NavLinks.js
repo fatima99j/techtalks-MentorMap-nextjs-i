@@ -19,7 +19,7 @@ export default function NavLinks() {
           </Link>
         </li>
         <li>
-          <a href="#be-mentor" className={commonClass}>
+          <a href="#become-mentor" className={commonClass}>
             Become A Mentor
           </a>
         </li>
