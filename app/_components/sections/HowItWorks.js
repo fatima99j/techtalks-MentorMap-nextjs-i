@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import StepCard from "../StepCard";
 import Button from "../Button";
+import Link from "next/link";
 
 const steps = [
   {
@@ -92,7 +93,7 @@ export default function HowItWorks() {
           </p>
           <div className="flex justify-center">
             <Button variation="tertiary" size="large" classes="w-auto!">
-              Create Your Free Account
+              <Link href="/auth/signup">Create Your Free Account</Link>
             </Button>
           </div>
         </div>

@@ -15,10 +15,10 @@ export default function Navbar() {
         <NavLinks />
 
         <div className="hidden lg:flex items-center justify-center gap-4">
-          <Link href="/login" className="hover:text-primary-600">
+          <Link href="/auth/signin" className="hover:text-primary-600">
             Sign In
           </Link>
-          <Link href="/signup">
+          <Link href="/auth/signup">
             <Button variation="primary" size="medium">
               Get Started
             </Button>
