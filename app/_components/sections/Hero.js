@@ -13,7 +13,7 @@ export default function Hero() {
           <HeroText />
 
           {/* Image */}
-          <div className="flex justify-center mt-10 pb-15 md:pb-20">
+          <div className="flex justify-center mt-10 pb-15">
             <div className="w-full lg:max-w-6xl mx-auto lg:translate-y-4">
               <Image
                 src={HeroImage}
