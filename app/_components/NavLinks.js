@@ -3,7 +3,7 @@ import React from "react";
 
 export default function NavLinks() {
   const commonClass =
-    "text-gray-800 font-medium hover:text-primary-600 transition-colors duration-300";
+    "text-gray-700 font-medium hover:text-primary-600 transition-colors duration-300";
 
   return (
     <nav className="hidden lg:flex items-center justify-center">
