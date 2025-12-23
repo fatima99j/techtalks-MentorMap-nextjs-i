@@ -18,11 +18,11 @@ export default function HeroText() {
       </div>
 
       <div className="flex flex-col sm:flex-row justify-center gap-4">
-        <Button variation="primary" size="large" classes="w-auto!">
+        <Button variant="primary" size="large" href="/mentors">
           Find Your Mentor
           <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />
         </Button>
-        <Button variation="secondary" size="large" classes="w-auto!">
+        <Button variant="secondary" size="large" href="/become-mentor">
           Become a Mentor
         </Button>
       </div>

@@ -13,16 +13,16 @@ export default function CTASection() {
           </h2>
 
           <p className="text-xl text-indigo-100 mb-10 leading-relaxed max-w-3xl mx-auto">
-            Join 50,000+ students who are already getting expert guidance from
-            industry professionals. Your dream career is just one session away.
+            Join students who are already getting expert guidance from industry
+            professionals. Your dream career is just one session away.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variation="tertiary" size="large">
-              <Link href="/auth/signup">Get Started for Free</Link>
+            <Button variant="tertiary" size="large" href="/auth/signup">
+              Get Started for Free
             </Button>
 
-            <Button variation="tertiaryBorder" size="large">
+            <Button variant="outline" size="large" href="/mentors">
               Browse Mentors
             </Button>
           </div>
