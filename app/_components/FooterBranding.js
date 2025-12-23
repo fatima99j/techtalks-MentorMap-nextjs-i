@@ -42,15 +42,15 @@ export default function FooterBranding() {
 
       <div className="flex items-center space-x-4">
         {socialLinks.map((link, idx) => (
-          <Link
+          <a
             href={link.href}
             key={idx}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors duration-300"
+            className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors duration-300 cursor-pointer"
           >
             {link.icon}
-          </Link>
+          </a>
         ))}
       </div>
     </>
