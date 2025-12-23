@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         primary: {
           100: "#f7f7f7", // tertiary color
-          200: "#ececec", // darker / bolder shade lal tertiary color
+          200: "#e6e6ff", // darker / bolder shade lal tertiary color
           600: "#2b00ff", // primary main color
           800: "#1a0099", // darker / bolder shade lal primary
         },

@@ -29,7 +29,7 @@ export default function BeMentor() {
 
             <MentorFeaturesList />
 
-            <Button size="large" classes="w-auto!">
+            <Button size="large">
               Become a mentor{" "}
               <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />
             </Button>

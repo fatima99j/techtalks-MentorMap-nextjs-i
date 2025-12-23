@@ -57,22 +57,18 @@ export function SignupForm({ className, ...props }) {
           />
         </Field>
         <Field>
-          <Button size="medium" classes="rounded-md!">
+          <Button size="medium" className="rounded-md">
             Create Account
           </Button>
         </Field>
         <FieldSeparator>Or continue with</FieldSeparator>
         <Field>
-          <Button
-            variation="tertiary"
-            size="medium"
-            classes="text-gray-800! rounded-md!"
-          >
+          <Button variant="social" size="medium">
             <FontAwesomeIcon
               icon={faLinkedin}
               className="w-4 h-4 text-blue-600"
             />{" "}
-            Sign up with LinkedIn
+            Sign in with LinkedIn
           </Button>
           <FieldDescription className="px-6 text-center">
             Already have an account? <Link href="/auth/signin">Sign in</Link>
