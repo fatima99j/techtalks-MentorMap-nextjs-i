@@ -1,15 +1,19 @@
-import { SigninForm } from "@/app/_components/auth/SigninForm";
-import Image from "next/image";
-import React from "react";
+import { SignUpForm } from "@/app/_components/auth/SignUpForm";
 import AuthImage from "@/public/signup.webp";
+import Image from "next/image";
+
+export const metadata = {
+  title: "Sign Up",
+  description: "Create Account to start with MentorMap.",
+};
 
 export default function Page() {
   return (
     <>
-      <div className="flex flex-col gap-4 py-6 px-8">
+      <div className="flex flex-col gap-4 p-8">
         <div className="flex flex-1 items-center justify-center">
           <div className="w-full max-w-sm">
-            <SigninForm />
+            <SignUpForm />
           </div>
         </div>
       </div>

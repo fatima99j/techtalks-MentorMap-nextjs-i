@@ -3,8 +3,8 @@ import { faArrowRight, faUserTie } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Button from "../Button";
-import SectionTag from "../SectionTag";
 import MentorFeaturesList from "../MentorFeaturesList";
+import SectionTag from "../SectionTag";
 
 export default function BeMentor() {
   return (

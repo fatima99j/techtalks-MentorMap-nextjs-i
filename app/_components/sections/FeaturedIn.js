@@ -1,4 +1,3 @@
-import React from "react";
 import TechTalksLogo from "@/public/techtalks.webp";
 import Image from "next/image";
 

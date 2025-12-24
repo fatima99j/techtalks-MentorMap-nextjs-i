@@ -1,10 +1,9 @@
-import React from "react";
-import SectionTag from "./SectionTag";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import ChallengeCard from "./ChallengeCard";
-import Image from "next/image";
 import SolutionImage from "@/public/solution.webp";
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
+import ChallengeCard from "./ChallengeCard";
+import SectionTag from "./SectionTag";
 
 const solutions = [
   {

@@ -15,16 +15,15 @@ export default function NavbarContent() {
 
       <div className="hidden lg:flex items-center justify-center gap-4">
         <Link
-          href="/auth/signin"
+          href="/auth/sign-in"
           className="text-gray-700 hover:text-primary-600 transition duration-300"
         >
           Sign In
         </Link>
-        <Link href="/auth/signup">
-          <Button variant="primary" size="medium">
-            Get Started
-          </Button>
-        </Link>
+
+        <Button variant="primary" size="medium" href="/auth/sign-up">
+          Get Started
+        </Button>
       </div>
 
       {/* Mobile Nav */}

@@ -47,6 +47,7 @@ export default function FooterBranding() {
             key={idx}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="social link"
             className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors duration-300 cursor-pointer"
           >
             {link.icon}
