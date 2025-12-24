@@ -1,6 +1,4 @@
-import React from "react";
-import SectionTag from "../SectionTag";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import StepsImage from "@/public/steps.webp";
 import {
   faCalendarDays,
   faGears,
@@ -8,9 +6,10 @@ import {
   faUserPlus,
   faVideo,
 } from "@fortawesome/free-solid-svg-icons";
-import StepCard from "../StepCard";
-import StepsImage from "@/public/steps.webp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import SectionTag from "../SectionTag";
+import StepCard from "../StepCard";
 
 const steps = [
   {

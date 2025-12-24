@@ -24,7 +24,7 @@ const sessions = [
     icon: (
       <FontAwesomeIcon
         icon={faFileLines}
-        className="w-8 h-8 text-primary-600"
+        className="w-8! h-8! text-primary-600"
       />
     ),
     borderColor: "border-primary-600",
@@ -43,11 +43,11 @@ const sessions = [
       "What employers look for",
     ],
     icon: (
-      <FontAwesomeIcon icon={faBriefcase} className="w-8 h-8 text-cyan-600" />
+      <FontAwesomeIcon icon={faBriefcase} className="w-8! h-8! text-cyan-600" />
     ),
-    borderColor: "border-cyan-600",
-    buttonColor: "bg-cyan-600 hover:bg-cyan-800",
-    checkIconColor: "text-cyan-600",
+    borderColor: "border-cyan-700",
+    buttonColor: "bg-cyan-700 hover:bg-cyan-800",
+    checkIconColor: "text-cyan-700",
     buttonMarginUp: "mt-4",
   },
   {
@@ -61,7 +61,7 @@ const sessions = [
       "Industry insights",
     ],
     icon: (
-      <FontAwesomeIcon icon={faCompass} className="w-8 h-8 text-purple-600" />
+      <FontAwesomeIcon icon={faCompass} className="w-8! h-8! text-purple-600" />
     ),
     borderColor: "border-purple-600",
     buttonColor: "bg-purple-600 hover:bg-purple-800",
@@ -79,11 +79,11 @@ const sessions = [
       "Answer improvement tips",
     ],
     icon: (
-      <FontAwesomeIcon icon={faComments} className="w-8 h-8 text-amber-600" />
+      <FontAwesomeIcon icon={faComments} className="w-8! h-8! text-amber-600" />
     ),
-    borderColor: "border-amber-600",
-    buttonColor: "bg-amber-600 hover:bg-amber-800",
-    checkIconColor: "text-amber-600",
+    borderColor: "border-amber-700",
+    buttonColor: "bg-amber-700 hover:bg-amber-800",
+    checkIconColor: "text-amber-700",
     buttonMarginBottom: "mb-4",
   },
 ];

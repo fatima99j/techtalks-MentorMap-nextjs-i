@@ -1,4 +1,8 @@
 import { cn } from "@/lib/utils";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import Button from "../Button";
 import {
   Field,
   FieldDescription,
@@ -7,13 +11,9 @@ import {
   FieldSeparator,
 } from "../ui/field";
 import { Input } from "../ui/input";
-import Button from "../Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import Link from "next/link";
 // import { Button } from "../ui/button";
 
-export function SignupForm({ className, ...props }) {
+export function SignUpForm({ className, ...props }) {
   return (
     <form className={cn("flex flex-col gap-6", className)} {...props}>
       <FieldGroup>
@@ -71,7 +71,7 @@ export function SignupForm({ className, ...props }) {
             Sign in with LinkedIn
           </Button>
           <FieldDescription className="px-6 text-center">
-            Already have an account? <Link href="/auth/signin">Sign in</Link>
+            Already have an account? <Link href="/auth/sign-in">Sign in</Link>
           </FieldDescription>
         </Field>
       </FieldGroup>

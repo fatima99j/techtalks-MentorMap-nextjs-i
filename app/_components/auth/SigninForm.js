@@ -8,12 +8,12 @@ import {
   FieldSeparator,
 } from "@/app/_components/ui/field";
 import { Input } from "@/app/_components/ui/input";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import Button from "../Button";
 
-export function SigninForm({ className, ...props }) {
+export function SignInForm({ className, ...props }) {
   return (
     <form className={cn("flex flex-col gap-6", className)} {...props}>
       <FieldGroup>
@@ -52,7 +52,7 @@ export function SigninForm({ className, ...props }) {
           </Button>
           <FieldDescription className="text-center">
             Don&apos;t have an account?{" "}
-            <Link href="/auth/signup" className="underline underline-offset-4">
+            <Link href="/auth/sign-up" className="underline underline-offset-4">
               Sign up
             </Link>
           </FieldDescription>

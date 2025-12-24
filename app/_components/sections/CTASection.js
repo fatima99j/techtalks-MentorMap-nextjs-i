@@ -1,7 +1,4 @@
-import React from "react";
-
 import Button from "../Button";
-import Link from "next/link";
 
 export default function CTASection() {
   return (
@@ -18,7 +15,7 @@ export default function CTASection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="tertiary" size="large" href="/auth/signup">
+            <Button variant="tertiary" size="large" href="/auth/sign-up">
               Get Started for Free
             </Button>
 

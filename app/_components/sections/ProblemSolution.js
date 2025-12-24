@@ -1,4 +1,3 @@
-import React from "react";
 import TheChallenge from "../TheChallenge";
 import TheSolution from "../TheSolution";
 

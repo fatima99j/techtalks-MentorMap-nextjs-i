@@ -1,6 +1,5 @@
-import React from "react";
-import NavbarScrollWrapper from "./NavbarScrollWrapper";
 import NavbarContent from "./NavbarContent";
+import NavbarScrollWrapper from "./NavbarScrollWrapper";
 
 export default function Navbar() {
   return (

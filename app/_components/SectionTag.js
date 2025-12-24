@@ -1,5 +1,3 @@
-import React from "react";
-
 const sectionTagColors = {
   primary: {
     bg: "bg-primary-100",
