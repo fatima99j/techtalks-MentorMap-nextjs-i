@@ -1,5 +1,5 @@
-import TheChallenge from "../TheChallenge";
-import TheSolution from "../TheSolution";
+import TheChallenge from "./TheChallenge";
+import TheSolution from "./TheSolution";
 
 export default function ProblemSolution() {
   return (

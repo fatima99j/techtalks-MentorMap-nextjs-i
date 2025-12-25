@@ -4,8 +4,7 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-
-import Button from "./Button";
+import Button from "@/components/ui/Button";
 
 export default function MobileNav({ children }) {
   const [isOpen, setIsOpen] = useState(false);

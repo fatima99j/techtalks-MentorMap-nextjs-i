@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import Button from "./Button";
+import Button from "@/components/ui/Button";
 import NavLinksMobile from "./NavLinksMobile";
 
 export default function MobileMenuContent() {
@@ -17,11 +17,10 @@ export default function MobileMenuContent() {
         >
           Sign In
         </Link>
-        <Link href="/auth/signup">
-          <Button variant="primary" size="large">
-            Get Started
-          </Button>
-        </Link>
+
+        <Button variant="primary" size="large" href="/auth/signup">
+          Get Started
+        </Button>
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-import Button from "./Button";
-import Logo from "./Logo";
-import MobileMenuContent from "./MobileMenuContent";
-import MobileNav from "./MobileNav";
 import NavLinks from "./NavLinks";
+import Logo from "@/components/ui/Logo";
+import Button from "@/components/ui/Button";
+import MobileNav from "./MobileNav";
+import MobileMenuContent from "./MobileMenuContent";
 
 export default function NavbarContent() {
   return (

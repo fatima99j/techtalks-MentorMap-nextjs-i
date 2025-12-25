@@ -1,17 +1,17 @@
 import { cn } from "@/lib/utils";
 
+import Button from "@/components/ui/Button";
 import {
   Field,
   FieldDescription,
   FieldGroup,
   FieldLabel,
   FieldSeparator,
-} from "@/app/_components/ui/field";
-import { Input } from "@/app/_components/ui/input";
+} from "@/components/ui/Field";
+import { Input } from "@/components/ui/Input";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import Button from "../Button";
 
 export function SignInForm({ className, ...props }) {
   return (
@@ -43,7 +43,7 @@ export function SignInForm({ className, ...props }) {
         </Field>
         <FieldSeparator>Or continue with</FieldSeparator>
         <Field>
-          <Button variant="social" size="medium">
+          <Button variant="social" size="medium" type="button">
             <FontAwesomeIcon
               icon={faLinkedin}
               className="w-4 h-4 text-blue-600"

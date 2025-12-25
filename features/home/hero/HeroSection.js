@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 import HeroImage from "@/public/hero.webp";
-import HeroBackground from "../HeroBackground";
-import HeroText from "../HeroText";
+import HeroBackground from "./HeroBackground";
+import HeroText from "./HeroText";
 
 export default function Hero() {
   return (
