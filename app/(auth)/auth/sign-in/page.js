@@ -1,6 +1,7 @@
-import { SignInForm } from "@/app/_components/auth/SignInForm";
-import AuthImage from "@/public/signup.webp";
 import Image from "next/image";
+
+import { SignInForm } from "@/features/auth/SigninForm";
+import AuthImage from "@/public/auth.webp";
 
 export const metadata = {
   title: "Sign In",

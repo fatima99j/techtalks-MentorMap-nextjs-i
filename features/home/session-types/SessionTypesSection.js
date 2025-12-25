@@ -7,8 +7,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import SectionTag from "../SectionTag";
-import SessionCard from "../SessionCard";
+import SectionTag from "@/components/ui/SectionTag";
+import SessionCard from "./SessionCard";
 
 const sessions = [
   {

@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "./_components/Button";
+import Button from "@/components/ui/Button";
 
 export default function Error({ error, reset }) {
   return (
@@ -8,7 +8,7 @@ export default function Error({ error, reset }) {
       <h1 className="text-3xl font-semibold">Something went wrong!</h1>
       <p className="text-lg">{error.message}</p>
 
-      <Button onClick={reset} size="large">
+      <Button variant="primary" onClick={reset} size="large">
         Try again
       </Button>
     </main>

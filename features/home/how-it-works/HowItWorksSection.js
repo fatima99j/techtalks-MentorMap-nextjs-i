@@ -8,8 +8,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import SectionTag from "../SectionTag";
-import StepCard from "../StepCard";
+import SectionTag from "../../../components/ui/SectionTag";
+import StepCard from "./StepCard";
 
 const steps = [
   {

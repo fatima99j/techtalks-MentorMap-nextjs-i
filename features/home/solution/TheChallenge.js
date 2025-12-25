@@ -1,9 +1,9 @@
+import SectionTag from "@/components/ui/SectionTag";
 import ProblemImage from "@/public/problem.webp";
 import { faTriangleExclamation } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import ChallengeCard from "./ChallengeCard";
-import SectionTag from "./SectionTag";
 
 const challenges = [
   {

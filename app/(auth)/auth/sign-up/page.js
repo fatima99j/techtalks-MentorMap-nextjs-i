@@ -1,5 +1,5 @@
-import { SignUpForm } from "@/app/_components/auth/SignUpForm";
-import AuthImage from "@/public/signup.webp";
+import { SignUpForm } from "@/features/auth/SignupForm";
+import AuthImage from "@/public/auth.webp";
 import Image from "next/image";
 
 export const metadata = {

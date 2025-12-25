@@ -1,10 +1,10 @@
+import Button from "@/components/ui/Button";
+import SectionTag from "@/components/ui/SectionTag";
 import MentorImage from "@/public/mentor.webp";
 import { faArrowRight, faUserTie } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import Button from "../Button";
-import MentorFeaturesList from "../MentorFeaturesList";
-import SectionTag from "../SectionTag";
+import MentorFeaturesList from "./MentorFeaturesList";
 
 export default function BeMentor() {
   return (
@@ -29,7 +29,7 @@ export default function BeMentor() {
 
             <MentorFeaturesList />
 
-            <Button size="large">
+            <Button size="large" href="/become-mentor">
               Become a mentor{" "}
               <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />
             </Button>

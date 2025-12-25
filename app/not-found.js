@@ -1,9 +1,9 @@
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Button from "./_components/Button";
-import Navbar from "./_components/Navbar";
-import Footer from "./_components/Footer";
+import Button from "@/components/ui/Button";
+import Footer from "@/components/ui/Footer";
+import Navbar from "@/features/navbar/Navbar";
 
 function NotFound() {
   return (
