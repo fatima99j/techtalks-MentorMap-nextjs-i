@@ -37,13 +37,18 @@ export function SignInForm({ className, ...props }) {
           />
         </Field>
         <Field>
-          <Button size="medium" className="rounded-md">
+          <Button size="medium" className="rounded-md py-3">
             Sign in
           </Button>
         </Field>
         <FieldSeparator>Or continue with</FieldSeparator>
         <Field>
-          <Button variant="social" size="medium" type="button">
+          <Button
+            variant="social"
+            size="medium"
+            type="button"
+            className="py-2.5"
+          >
             <FontAwesomeIcon
               icon={faLinkedin}
               className="w-4 h-4 text-blue-600"
