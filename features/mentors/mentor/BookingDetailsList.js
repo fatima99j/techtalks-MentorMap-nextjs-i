@@ -4,13 +4,13 @@ import Button from "@/components/ui/Button";
 import { DAYS } from "@/lib/constants";
 import { useState } from "react";
 import BookingSummaryCard from "./BookingSummaryCard";
-import { useBookingModal } from "./context/BookingModalContext";
+import { useModal } from "./context/ModalContext";
 
 export default function BookingDetailsList({ availability, offered_sessions }) {
   const initialState = { session: null, day: null, time: null, message: "" };
   const [booking, setBooking] = useState(initialState);
 
-  const { closeModal } = useBookingModal();
+  const { closeModal } = useModal();
 
   const slots = booking.day
     ? availability.slots[booking.day]

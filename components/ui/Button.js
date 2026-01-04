@@ -32,7 +32,7 @@ export default function Button({
   ...props
 }) {
   const baseClasses =
-    "inline-flex items-center justify-center gap-2 font-semibold rounded-lg cursor-pointer transition-colors duration-300";
+    "inline-flex items-center justify-center gap-2 font-semibold rounded-lg cursor-pointer transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none";
 
   const classes = [baseClasses, variants[variant], sizes[size], className].join(
     " "

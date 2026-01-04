@@ -1,5 +1,5 @@
 import Footer from "@/components/ui/Footer";
-import { BookingModalProvider } from "@/features/mentors/mentor/context/BookingModalContext";
+import { ModalProvider } from "@/features/mentors/mentor/context/ModalContext";
 import Navbar from "@/features/navbar/Navbar";
 
 export default function Layout({ children }) {
@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <>
       <Navbar />
       <main className="flex-1">
-        <BookingModalProvider>{children}</BookingModalProvider>
+        <ModalProvider>{children}</ModalProvider>
       </main>
       <Footer />
     </>

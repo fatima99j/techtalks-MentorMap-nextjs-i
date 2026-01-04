@@ -2,26 +2,26 @@
 
 import { createContext, useContext, useState } from "react";
 
-const BookingModalContext = createContext();
+const ModalContext = createContext();
 
-function BookingModalProvider({ children }) {
+function ModalProvider({ children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
 
   return (
-    <BookingModalContext.Provider value={{ isOpen, openModal, closeModal }}>
+    <ModalContext.Provider value={{ isOpen, openModal, closeModal, setIsOpen }}>
       {children}
-    </BookingModalContext.Provider>
+    </ModalContext.Provider>
   );
 }
 
-function useBookingModal() {
-  const context = useContext(BookingModalContext);
+function useModal() {
+  const context = useContext(ModalContext);
   if (context === undefined)
     throw new Error("Context was used outside provider");
   return context;
 }
 
-export { BookingModalProvider, useBookingModal };
+export { ModalProvider, useModal };
