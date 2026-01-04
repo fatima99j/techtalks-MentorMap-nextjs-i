@@ -1,9 +1,9 @@
 "use client";
 
-import { useBookingModal } from "./context/BookingModalContext";
+import { useModal } from "./context/ModalContext";
 
 export default function AvailableTimeButton({ children }) {
-  const { openModal } = useBookingModal();
+  const { openModal } = useModal();
 
   return (
     <button

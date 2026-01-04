@@ -3,10 +3,10 @@
 import Button from "@/components/ui/Button";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { useBookingModal } from "./context/BookingModalContext";
+import { useModal } from "./context/ModalContext";
 
 export default function BookingModal({ children, firstName }) {
-  const { isOpen, openModal, closeModal } = useBookingModal();
+  const { isOpen, openModal, closeModal } = useModal();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {

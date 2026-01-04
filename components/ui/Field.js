@@ -28,8 +28,8 @@ function FieldLegend({ className, variant = "legend", ...props }) {
       data-slot="field-legend"
       data-variant={variant}
       className={cn(
-        "mb-3 font-medium",
-        "data-[variant=legend]:text-base",
+        "mb-3 font-bold text-gray-900",
+        "data-[variant=legend]:text-2xl",
         "data-[variant=label]:text-sm",
         className
       )}
@@ -43,7 +43,7 @@ function FieldGroup({ className, ...props }) {
     <div
       data-slot="field-group"
       className={cn(
-        "group/field-group @container/field-group flex w-full flex-col gap-4 data-[slot=checkbox-group]:gap-3 [&>[data-slot=field-group]]:gap-4",
+        "group/field-group @container/field-group w-full grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 data-[slot=checkbox-group]:gap-3 [&>[data-slot=field-group]]:gap-4",
         className
       )}
       {...props}

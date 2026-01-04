@@ -31,7 +31,7 @@ export default function SectionTag({ icon, label, color = "primary" }) {
     <div
       className={`inline-flex items-center space-x-2 ${sectionTagColors[color].bg} ${sectionTagColors[color].text} px-4 py-2 rounded-full mb-6`}
     >
-      <span className="w-4 h-4">{icon}</span>
+      {icon}
       <span className="text-sm font-semibold">{label}</span>
     </div>
   );
