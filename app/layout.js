@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
         {children}
 
         <div id="drawer-hook" />
+        <div id="modal-hook" />
       </body>
     </html>
   );

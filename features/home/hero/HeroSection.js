@@ -4,7 +4,7 @@ import HeroImage from "@/public/hero.webp";
 import HeroBackground from "./HeroBackground";
 import HeroText from "./HeroText";
 
-export default function Hero() {
+export default function HeroSection() {
   return (
     <section className="relative">
       <HeroBackground>

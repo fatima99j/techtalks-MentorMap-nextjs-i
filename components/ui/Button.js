@@ -11,12 +11,14 @@ const variants = {
   social:
     "bg-primary-100 hover:bg-primary-200 text-gray-800 rounded-md hover:shadow-sm hover:shadow-primary-200/20 transition-all duration-300",
   ghost: "text-gray-500 hover:bg-indigo-50",
+  cancel:
+    "bg-[#fefefe] text-gray-600 border-1 border-gray-300 hover:bg-gray-100",
   danger: "bg-red-600 hover:bg-red-700 text-white",
 };
 
 const sizes = {
   small: "px-2 py-1 text-sm",
-  medium: "px-3 py-2 sm:px-4 text-[1rem]",
+  medium: "px-3 py-2 sm:px-4 text-base",
   large: "px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg",
 };
 

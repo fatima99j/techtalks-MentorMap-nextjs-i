@@ -6,6 +6,10 @@
 @custom-variant dark (&:is(.dark *));
 @config "../../tailwind.config.js";
 
+html {
+  scrollbar-gutter: stable;
+}
+
 @layer components {
   .container--common {
     max-width: 100rem;
