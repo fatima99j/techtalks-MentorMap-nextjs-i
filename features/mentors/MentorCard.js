@@ -70,7 +70,11 @@ export default async function MentorCard({ mentor }) {
 
         <p className="text-gray-600 text-sm mb-4 line-clamp-2">{mentor.bio}</p>
 
-        <Button href={`/mentors/${id}`} size="medium" className="w-full py-2.5">
+        <Button
+          href={`/mentors/${id.toString()}`}
+          size="medium"
+          className="w-full py-2.5"
+        >
           View Profile
         </Button>
       </div>
