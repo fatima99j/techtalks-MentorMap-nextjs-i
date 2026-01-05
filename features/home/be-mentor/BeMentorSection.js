@@ -8,7 +8,7 @@ import MentorFeaturesList from "./MentorFeaturesList";
 
 export default function BeMentor() {
   return (
-    <section className="py-24">
+    <section id="become-mentor" className="py-24">
       <div className="container--common">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>

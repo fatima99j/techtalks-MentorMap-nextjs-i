@@ -1,24 +1,24 @@
 import Link from "next/link";
 
 import Button from "@/components/ui/Button";
-import NavLinksMobile from "./NavLinksMobile";
+import MobileNavLinks from "./MobileNavLinks";
 
 export default function MobileMenuContent() {
   return (
     <div className="flex flex-col gap-6">
-      <NavLinksMobile />
+      <MobileNavLinks />
 
       <div className="border-t border-gray-400" />
 
       <div className="flex flex-col items-center justify-center gap-4 pt-2">
         <Link
-          href="/auth/signin"
-          className="text-gray-700 hover:text-primary-600 transition duration-300"
+          href="/"
+          className="text-gray-700 font-medium hover:text-primary-600 transition-colors duration-300"
         >
-          Sign In
+          Join Session
         </Link>
 
-        <Button variant="primary" size="large" href="/auth/signup">
+        <Button variant="primary" size="large" href="/mentors">
           Get Started
         </Button>
       </div>
