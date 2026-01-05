@@ -1,10 +1,9 @@
-import Link from "next/link";
-
-import NavLinks from "./NavLinks";
-import Logo from "@/components/ui/Logo";
 import Button from "@/components/ui/Button";
-import MobileNav from "./MobileNav";
+import Logo from "@/components/ui/Logo";
+import JoinSessionModal from "./JoinSessionModal";
 import MobileMenuContent from "./MobileMenuContent";
+import MobileNav from "./MobileNav";
+import NavLinks from "./NavLinks";
 
 export default function NavbarContent() {
   return (
@@ -14,12 +13,7 @@ export default function NavbarContent() {
       <NavLinks />
 
       <div className="hidden lg:flex items-center justify-center gap-4">
-        <Link
-          href="/"
-          className="text-gray-700 font-medium text-lg hover:text-primary-600 transition-colors duration-300"
-        >
-          Join Session
-        </Link>
+        <JoinSessionModal />
 
         <Button variant="primary" size="medium" href="/mentors">
           Get Started
