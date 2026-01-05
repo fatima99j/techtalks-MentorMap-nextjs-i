@@ -2,6 +2,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Button from "@/components/ui/Button";
+import StartSessionButton from "./StartSessionButton";
 
 export default function HeroText() {
   return (
@@ -22,9 +23,8 @@ export default function HeroText() {
           Find Your Mentor
           <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />
         </Button>
-        <Button variant="secondary" size="large" href="/become-mentor">
-          Become a Mentor
-        </Button>
+
+        <StartSessionButton />
       </div>
     </div>
   );
