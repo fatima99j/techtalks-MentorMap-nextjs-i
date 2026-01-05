@@ -15,13 +15,13 @@ export default function NavbarContent() {
 
       <div className="hidden lg:flex items-center justify-center gap-4">
         <Link
-          href="/auth/sign-in"
-          className="text-gray-700 hover:text-primary-600 transition duration-300"
+          href="/"
+          className="text-gray-700 font-medium text-lg hover:text-primary-600 transition-colors duration-300"
         >
-          Sign In
+          Join Session
         </Link>
 
-        <Button variant="primary" size="medium" href="/auth/sign-up">
+        <Button variant="primary" size="medium" href="/mentors">
           Get Started
         </Button>
       </div>
