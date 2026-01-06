@@ -1,5 +1,6 @@
 import { faCheck, faClock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 export default function SessionCard({ session }) {
   const {
@@ -15,7 +16,7 @@ export default function SessionCard({ session }) {
 
   return (
     <div
-      className={`flex flex-col h-full bg-[#fefefe] rounded-2xl p-8 lg:p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 ${borderColor}`}
+      className={`flex flex-col h-full bg-[#fefefe] rounded-2xl p-8 lg:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 ${borderColor}`}
     >
       <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
         {icon}
@@ -42,12 +43,13 @@ export default function SessionCard({ session }) {
         ))}
       </ul>
 
-      <button
-        className={`w-full mt-auto ${buttonColor} text-white py-3 rounded-lg font-semibold transition-colors duration-300 cursor-pointer
+      <Link
+        href="/mentors"
+        className={`w-full mt-auto ${buttonColor} text-white text-center py-3 rounded-lg font-semibold transition-colors duration-300 cursor-pointer
         `}
       >
         Book Session
-      </button>
+      </Link>
     </div>
   );
 }

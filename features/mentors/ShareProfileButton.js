@@ -16,21 +16,21 @@ export default function ShareProfileButton({ url }) {
         });
       } else {
         await navigator.clipboard.writeText(shareUrl);
-        // toast({
-        //   description: "Profile link copied to clipboard",
-        // });
+        alert("Link copied to clipboard!");
       }
-    } catch {
-      // toast({
-      //   description: "Unable to share profile",
-      //   variant: "destructive",
-      // });
+    } catch (err) {
+      if (err.name === "AbortError") {
+        return;
+      }
     }
   };
 
   return (
-    <Button variant="secondary" onClick={handleShare}>
-      <FontAwesomeIcon icon={faShare} className="h-3.5! w-3.5!" />
+    <Button type="button" variant="secondary" onClick={handleShare}>
+      <FontAwesomeIcon
+        icon={faShare}
+        className="h-3! w-3! sm:h-3.5! sm:w-3.5!"
+      />
       Share
     </Button>
   );

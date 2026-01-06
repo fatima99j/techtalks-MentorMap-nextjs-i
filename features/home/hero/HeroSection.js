@@ -17,7 +17,7 @@ export default function HeroSection() {
               <Image
                 src={HeroImage}
                 alt="Two professionals collaborating on a laptop – representing mentorship and career guidance"
-                className="rounded-2xl shadow-2xl object-cover "
+                className="rounded-2xl shadow-2xl object-cover h-[300px] sm:h-[400px] md:h-auto"
                 priority
                 quality={100}
                 placeholder="blur"

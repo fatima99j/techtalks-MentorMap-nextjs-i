@@ -25,7 +25,7 @@ export default function BookingModal({ children, firstName }) {
 
   return (
     <>
-      <Button type="button" onClick={openModal}>
+      <Button type="button" className="py-2.5" onClick={openModal}>
         Book Session
       </Button>
 
@@ -33,19 +33,19 @@ export default function BookingModal({ children, firstName }) {
         createPortal(
           <div
             onClick={closeModal}
-            className={`fixed inset-0 z-9999 backdrop-blur-xs transition-opacity duration-300 bg-[rgba(255, 255, 255, 0.1)] flex items-center ${
+            className={`fixed inset-0 z-9999 backdrop-blur-xs transition-opacity duration-300 bg-[rgba(255, 255, 255, 0.1)] flex items-end sm:items-center p-0 sm:p-4 ${
               isOpen
                 ? "opacity-100 pointer-events-auto"
                 : "opacity-0 pointer-events-none"
             }`}
           >
             <div
-              className="relative bg-[#fefefe] rounded-xl shadow-lg max-w-5xl w-full mx-auto max-h-[90vh] overflow-y-auto"
+              className="relative bg-[#fefefe] rounded-t-2xl sm:rounded-xl shadow-lg w-full sm:max-w-5xl sm:mx-auto max-h-full sm:max-h-[90vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="sticky top-0 bg-[#fefefe] border-b border-gray-200 px-12 py-3 flex items-start justify-between z-10">
+              <div className="sticky top-0 bg-[#fefefe] border-b border-gray-200 px-4 sm:px-8 md:px-12 py-4 sm:py-3 flex items-start justify-between z-10">
                 <div>
-                  <h2 className="text-2xl font-bold text-gray-900 leading-tight">
+                  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 leading-tight">
                     Book a Session
                   </h2>
                   <p className="text-base text-gray-500 mt-0.5">
@@ -62,7 +62,9 @@ export default function BookingModal({ children, firstName }) {
                 </button>
               </div>
 
-              <div className="py-6 px-12">{children}</div>
+              <div className="py-4 sm:py-6 px-4 sm:px-8 md:px-12">
+                {children}
+              </div>
             </div>
           </div>,
           document.getElementById("modal-hook")

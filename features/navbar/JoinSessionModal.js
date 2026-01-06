@@ -38,7 +38,7 @@ export default function JoinSessionModal() {
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="text-2xl text-gray-900 font-bold">
+          <DialogTitle className="text-xl sm:text-2xl text-gray-900 font-bold">
             Join Session
           </DialogTitle>
           <DialogDescription className="text-gray-600 leading-relaxed text-base">
@@ -54,7 +54,7 @@ export default function JoinSessionModal() {
               <Input
                 id="roomLink"
                 type="text"
-                placeholder="e.g., aB3xQ9k2"
+                placeholder="https://mentormap.vercel.app/session/Q1SZOotB"
                 value={sessionLink}
                 onChange={(e) => setSessionLink(e.target.value)}
                 onKeyPress={(e) => e.key === "Enter" && handleJoinSession()}
@@ -63,7 +63,7 @@ export default function JoinSessionModal() {
             </Field>
           </div>
 
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 sm:p-4">
             <div className="flex items-start gap-2">
               <FontAwesomeIcon
                 icon={faInfoCircle}

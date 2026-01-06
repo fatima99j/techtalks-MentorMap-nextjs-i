@@ -22,10 +22,8 @@ export default async function Page({ searchParams }) {
       <MentorsHeroSection />
 
       <section className="py-12">
-        <div className="container--common flex gap-8">
-          <div>
-            <FiltersSidebar />
-          </div>
+        <div className="container--common flex flex-col lg:flex-row gap-8">
+          <FiltersSidebar />
 
           <div className="flex flex-col gap-1 flex-1">
             <h2 className="text-2xl font-bold text-gray-900">All Mentors</h2>

@@ -25,17 +25,17 @@ export default function SearchTag({ label, searchValue }) {
   return (
     <button
       onClick={() => handleSearch(searchValue)}
-      className={`px-4 py-1.5 backdrop-blur-sm rounded-full text-sm transition-colors duration-200 cursor-pointer flex items-center gap-2 ${
+      className={`px-2.5 sm:px-4 py-1 sm:py-1.5 backdrop-blur-sm rounded-full text-[0.8rem] sm:text-sm transition-colors duration-200 cursor-pointer inline-flex items-center gap-2 ${
         isActive
           ? "bg-white/40 hover:bg-white/50"
           : "bg-white/20 hover:bg-white/30"
       }`}
     >
-      <span>{label}</span>
+      <span className="whitespace-nowrap">{label}</span>
       {isActive && (
         <span
           onClick={handleClear}
-          className="text-xl text-gray-200 hover:text-gray-500 transition-colors duration-200 leading-none"
+          className="text-lg sm:text-xl text-gray-200 hover:text-gray-500 transition-colors duration-200 leading-none"
           aria-label="Clear search tag"
         >
           &times;

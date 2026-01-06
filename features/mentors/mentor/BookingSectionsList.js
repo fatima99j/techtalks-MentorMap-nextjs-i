@@ -33,7 +33,7 @@ export default function BookingSectionsList({
 
   return sections.map((section) => (
     <div key={section.title}>
-      <h2 className="text-xl font-semibold text-gray-900 mb-4">
+      <h2 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3 md:mb-4">
         {section.title}
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">

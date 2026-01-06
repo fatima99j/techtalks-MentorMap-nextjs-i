@@ -18,18 +18,18 @@ const SUBMIT_INFO = [
 
 export default function FormInfoCard() {
   return (
-    <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
+    <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 sm:p-4 md:p-5">
       <div className="flex items-start gap-2">
         <FontAwesomeIcon
           icon={faInfoCircle}
-          className="text-blue-600 text-xl shrink-0"
+          className="text-blue-600 text-lg sm:text-xl shrink-0"
         />
 
         <div className="space-y-2.5">
           <p className="font-semibold text-gray-900 text-sm">
             Before you submit:
           </p>
-          <ul className="text-sm text-gray-700 space-y-2 pl-5 list-disc marker:text-blue-500">
+          <ul className="text-sm text-gray-700 space-y-2 pl-3 sm:pl-5 list-disc marker:text-blue-500">
             {SUBMIT_INFO.map((info, idx) => (
               <li key={idx}>{info.label}</li>
             ))}

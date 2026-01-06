@@ -39,7 +39,7 @@ export default function TheChallenge() {
           icon={<FontAwesomeIcon icon={faTriangleExclamation} />}
         />
         <div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
             The Gap Between Education and Career
           </h2>
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -61,7 +61,7 @@ export default function TheChallenge() {
       </div>
 
       {/* Image */}
-      <div className="h-[500px] relative flex-1 shadow-2xl overflow-hidden self-center">
+      <div className="h-[300px] sm:h-[400px] md:h-[500px] relative flex-1 shadow-2xl overflow-hidden self-center">
         <Image
           src={ProblemImage}
           alt="Confused student looking at laptop screen with multiple career path options, frustrated expression, modern workspace, professional photography"

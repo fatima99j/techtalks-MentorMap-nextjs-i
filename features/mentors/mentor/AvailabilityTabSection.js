@@ -16,8 +16,8 @@ export default function AvailabilityTabSection({ mentor }) {
 
   return (
     <section className="space-y-8">
-      <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
-        <div className="flex items-start gap-3">
+      <div className="bg-indigo-50 border border-indigo-200 rounded-lg px-2 py-4 sm:p-3 md:p-4">
+        <div className="flex items-start gap-2 sm:gap-3">
           <div className="flex items-center justify-center shrink-0 mt-0.5">
             <FontAwesomeIcon icon={faWarning} className="text-primary-600" />
           </div>

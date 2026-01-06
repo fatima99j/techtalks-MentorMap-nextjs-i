@@ -99,7 +99,7 @@ export default function SessionTypes() {
             icon={<FontAwesomeIcon icon={faListCheck} />}
           />
 
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
             Choose Your Mentorship Session
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

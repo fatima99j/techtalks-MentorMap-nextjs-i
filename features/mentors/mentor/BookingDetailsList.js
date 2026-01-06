@@ -2,13 +2,12 @@
 
 import Button from "@/components/ui/Button";
 import FormErrorCard from "@/features/become-mentor/FormErrorCard";
-import { DAYS } from "@/lib/constants";
-import { useState } from "react";
-import BookingSummaryCard from "./BookingSummaryCard";
-import { useModal } from "./context/ModalContext";
 import { bookSession } from "@/lib/actions";
 import { useParams } from "next/navigation";
+import { useState } from "react";
 import BookingSectionsList from "./BookingSectionsList";
+import BookingSummaryCard from "./BookingSummaryCard";
+import { useModal } from "./context/ModalContext";
 
 export default function BookingDetailsList({ availability, offered_sessions }) {
   const initialState = { session: null, day: null, time: null, message: "" };
@@ -44,7 +43,7 @@ export default function BookingDetailsList({ availability, offered_sessions }) {
       />
 
       <div>
-        <label className="block text-xl font-semibold text-gray-900 mb-4">
+        <label className="block text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3 md:mb-4">
           Message to Mentor (Optional)
         </label>
         <textarea
@@ -66,7 +65,7 @@ export default function BookingDetailsList({ availability, offered_sessions }) {
         <FormErrorCard error={error} setError={setError} />
       )}
 
-      <div className="w-full flex items-center gap-6">
+      <div className="w-full flex items-center gap-4 sm:gap-6">
         <Button
           type="button"
           variant="cancel"
@@ -74,12 +73,12 @@ export default function BookingDetailsList({ availability, offered_sessions }) {
             setBooking(initialState);
             closeModal();
           }}
-          className="w-full px-6 py-3"
+          className="w-full py-3"
         >
           Cancel
         </Button>
         <Button
-          className="w-full border border-primary-600 px-6 py-3"
+          className="w-full border border-primary-600 py-3 whitespace-nowrap"
           onClick={handleBooking}
         >
           Confirm Booking

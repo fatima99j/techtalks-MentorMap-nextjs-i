@@ -88,9 +88,9 @@ export default function Page() {
 
   if (loading) {
     return (
-      <div className="flex flex-col items-center justify-center h-screen">
+      <div className="flex flex-col items-center justify-center min-h-screen ">
         <Spinner />
-        <p className="text-gray-600 text-lg font-medium">
+        <p className="text-gray-600 text-base md:text-lg font-medium text-center">
           Connecting to session...
         </p>
       </div>
@@ -98,7 +98,7 @@ export default function Page() {
   }
 
   return (
-    <div className="w-full h-screen flex items-center justify-center overflow-hidden">
+    <div className="w-full h-screen">
       <div ref={element} className="w-full h-full" />
     </div>
   );
