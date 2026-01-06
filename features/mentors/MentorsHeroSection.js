@@ -13,7 +13,7 @@ export default function MentorsHeroSection() {
     <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700 text-[#fefefe] py-16">
       <div className="container--common">
         <div className="max-w-4xl mx-auto text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             Discover Your Perfect Mentor
           </h1>
           <p className="text-xl text-blue-100 mb-8">
@@ -23,14 +23,14 @@ export default function MentorsHeroSection() {
           <SearchBar />
         </div>
 
-        <div className="flex flex-wrap justify-center items-center gap-3 max-w-5xl mx-auto">
-          <span className="text-sm text-blue-100">Eg:</span>
+        <div className="flex flex-wrap justify-center items-center gap-1.5 sm:gap-3  max-w-5xl mx-auto mt-6 sm:mt-0">
+          <span className="text-[0.8rem] sm:text-sm text-blue-100 inline-block">
+            Eg:
+          </span>
           {SEARCH_TAGS.map((tag) => (
-            <SearchTag
-              key={tag.label}
-              label={tag.label}
-              searchValue={tag.query}
-            />
+            <span key={tag.label} className="inline-block">
+              <SearchTag label={tag.label} searchValue={tag.query} />
+            </span>
           ))}
         </div>
       </div>

@@ -2,10 +2,10 @@ import Button from "@/components/ui/Button";
 
 export default function CTASection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-indigo-600 to-purple-600">
+    <section className="py-16 sm:py-20 bg-gradient-to-br from-indigo-600 to-purple-600">
       <div className="container--common">
         <div className="flex flex-col items-center text-center gap-6">
-          <h2 className="text-4xl lg:text-5xl font-bold text-primary-100 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary-100 mb-6 leading-tight">
             Ready to Navigate Your Career Path?
           </h2>
 

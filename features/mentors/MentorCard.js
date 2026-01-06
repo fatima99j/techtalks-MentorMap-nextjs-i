@@ -19,10 +19,10 @@ export default async function MentorCard({ mentor }) {
   const remainingCount = skills.length - 3;
 
   return (
-    <div className="max-w-md mx-auto p-6 h-full">
-      <div className="bg-white rounded-2xl shadow-md p-6 pb-5  h-full flex flex-col">
+    <div className="w-full sm:max-w-md mx-auto pt-4 sm:pt-6 h-full">
+      <div className="bg-[#fefefe] rounded-2xl shadow-md p-4 sm:p-6 pb-5 h-full flex flex-col">
         <div className="mb-4">
-          <div className="relative w-24 h-24 rounded-3xl border-4 border-white shadow-md overflow-hidden">
+          <div className="relative w-24 h-24 rounded-3xl border-4 border-[#fefefe] shadow-md overflow-hidden">
             <Image
               width={96}
               height={96}

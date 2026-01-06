@@ -7,7 +7,7 @@ import NavLinks from "./NavLinks";
 
 export default function NavbarContent() {
   return (
-    <div className="container--common flex justify-between items-center px-6! md:px-8! md:py-2!">
+    <div className="container--common flex justify-between items-center px-6! md:px-8! py-2.5 sm:py-3 md:py-4">
       <Logo />
 
       <NavLinks />

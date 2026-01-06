@@ -18,7 +18,7 @@ export default function BeMentor() {
               icon={<FontAwesomeIcon icon={faUserTie} />}
             />
 
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Share Your Knowledge, Shape Careers
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -36,7 +36,7 @@ export default function BeMentor() {
           </div>
 
           {/* Image */}
-          <div className="md:h-[600px] w-full overflow-hidden rounded-2xl shadow-2xl aspect-square relative">
+          <div className="h-[300px] sm:h-[400px] md:h-[500px] w-full overflow-hidden rounded-2xl shadow-2xl aspect-square relative">
             <Image
               className="object-cover"
               fill

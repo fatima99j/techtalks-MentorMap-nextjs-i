@@ -19,7 +19,7 @@ const variants = {
 const sizes = {
   small: "px-2 py-1 text-sm",
   medium: "px-3 py-2 sm:px-4 text-base",
-  large: "px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg",
+  large: "px-6 py-3.5 text-base sm:px-8 sm:py-4 sm:text-lg",
 };
 
 export default function Button({

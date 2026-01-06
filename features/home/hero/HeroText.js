@@ -8,7 +8,7 @@ export default function HeroText() {
   return (
     <div className="w-full lg:max-w-4xl mx-auto pt-12 text-center">
       <div className="flex flex-col gap-6">
-        <h1 className="font-bold text-5xl md:text-6xl text-gray-900 tracking-tight leading-snug">
+        <h1 className="font-bold text-5xl md:text-6xl text-gray-900 tracking-tight leading-tight">
           Navigate Your Career Path with{" "}
           <span className="text-primary-600">Guidance</span>
         </h1>

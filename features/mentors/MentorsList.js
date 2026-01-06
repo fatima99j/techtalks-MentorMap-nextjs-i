@@ -34,7 +34,7 @@ export default async function MentorsList({ searchParams }) {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
         {paginatedMentors.length > 0 ? (
           paginatedMentors.map((mentor) => (
             <MentorCard mentor={mentor} key={mentor.mentor_id} />

@@ -1,6 +1,9 @@
 "use client";
 
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useSearchParams } from "next/navigation";
+import { useState } from "react";
 import FilterGroup from "./FilterGroup";
 import ResetFiltersButton from "./ResetFiltersButton";
 
@@ -29,7 +32,9 @@ const SKILLS = [
 
 export default function FiltersSidebar() {
   const searchParams = useSearchParams();
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
+  // Get all filters and calc the total
   const activeExperience = searchParams.get("experience");
   const activeIndustry = searchParams.get("industry");
   const activeSkill = searchParams.get("skill");
@@ -39,42 +44,52 @@ export default function FiltersSidebar() {
   ).length;
 
   return (
-    <aside className="w-80">
-      <div className="sticky p-6 shadow-sm rounded-2xl bg-white border border-gray-200">
-        <div className="flex justify-between items-center mb-6">
+    <aside className="w-full lg:w-80">
+      <div className="p-4 lg:p-6 shadow-xs sm:shadow-sm rounded-2xl bg-[#fefefe] border border-gray-200 lg:sticky lg:top-4">
+        {/* Mobile filter header */}
+        <button
+          onClick={() => setIsFilterOpen(!isFilterOpen)}
+          className="w-full flex justify-between items-center lg:mb-6 lg:pointer-events-none"
+        >
           <h2 className="text-lg font-bold text-gray-900">
             Filters{" "}
             {totalFilters > 0 && (
               <span className="text-blue-600">({totalFilters})</span>
             )}
           </h2>
-          {totalFilters > 0 && (
-            <ResetFiltersButton>Clear All</ResetFiltersButton>
-          )}
-        </div>
+          <div className="flex items-center gap-2">
+            {totalFilters > 0 && (
+              <ResetFiltersButton>Clear All</ResetFiltersButton>
+            )}
 
-        <div className="mb-6">
-          <FilterGroup
-            filterName={"Experience Level"}
-            filterData={EXPERIENCE_LEVELS}
-            filterParam={"experience"}
-          />
-        </div>
+            <span className="lg:hidden">
+              {isFilterOpen ? (
+                <FontAwesomeIcon icon={faChevronUp} className="w-5 h-5" />
+              ) : (
+                <FontAwesomeIcon icon={faChevronDown} className="w-5 h-5" />
+              )}
+            </span>
+          </div>
+        </button>
 
-        <div className="mb-6">
-          <FilterGroup
-            filterName={"Industry"}
-            filterData={INDUSTRIES}
-            filterParam={"industry"}
-          />
-        </div>
-
-        <div>
-          <FilterGroup
-            filterName={"Skills"}
-            filterData={SKILLS}
-            filterParam={"skill"}
-          />
+        <div className={`${isFilterOpen ? "block" : "hidden"} lg:block`}>
+          <div className="space-y-6">
+            <FilterGroup
+              filterName={"Experience Level"}
+              filterData={EXPERIENCE_LEVELS}
+              filterParam={"experience"}
+            />
+            <FilterGroup
+              filterName={"Industry"}
+              filterData={INDUSTRIES}
+              filterParam={"industry"}
+            />
+            <FilterGroup
+              filterName={"Skills"}
+              filterData={SKILLS}
+              filterParam={"skill"}
+            />
+          </div>
         </div>
       </div>
     </aside>

@@ -14,9 +14,11 @@ export default function MentorDetails({ mentor }) {
     <div className="flex-1 min-w-0">
       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">{full_name}</h1>
-          <p className="text-lg text-gray-700 mb-1">{job}</p>
-          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+            {full_name}
+          </h1>
+          <p className="text-base sm:text-lg text-gray-700 mb-1">{job}</p>
+          <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-sm text-gray-600">
             <div className="flex items-center gap-1">
               <div className="flex items-center justify-center">
                 <FontAwesomeIcon
@@ -38,7 +40,7 @@ export default function MentorDetails({ mentor }) {
           </div>
         </div>
 
-        <div className="flex gap-3">
+        <div className="flex flex-col sm:flex-row gap-3">
           <BookingModal firstName={firstName}>
             <BookingDetailsWrapper mentor={mentor} />
           </BookingModal>

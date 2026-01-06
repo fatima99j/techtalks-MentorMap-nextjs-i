@@ -37,7 +37,6 @@ export default function MentorApplicationSection() {
         setError(res?.error || "Something went wrong. Please try again.");
       }
     } catch (error) {
-      console.error("Submit error:", error);
       setError("Network error. Please try again.");
     }
   };
@@ -45,11 +44,13 @@ export default function MentorApplicationSection() {
   return (
     <>
       <section className="py-16">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="bg-white rounded-2xl border-2 border-gray-200 p-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="bg-[#fefefe] rounded-xl sm:rounded-2xl border border-gray-200 sm:border-2 p-6 sm:p-8">
             <form onSubmit={handleSubmit}>
               <FieldSet>
-                <FieldLegend>Mentorship Details</FieldLegend>
+                <FieldLegend className="text-xl sm:text-2xl">
+                  Mentorship Details
+                </FieldLegend>
                 <FieldDescription className="text-base">
                   Tell us about your experience
                 </FieldDescription>
@@ -119,7 +120,7 @@ export default function MentorApplicationSection() {
                       Recommended: $50-150/hour
                     </FieldDescription>
                   </Field>
-                  <Field className="col-span-2">
+                  <Field className="md:col-span-2">
                     <FieldLabel htmlFor="bio">
                       Professional Bio * (Tell us about your background and
                       experience)
@@ -130,8 +131,8 @@ export default function MentorApplicationSection() {
                       required
                       rows={4}
                       maxLength={300}
-                      className="w-full px-3 py-3 border border-input bg-transparent rounded-md text-base placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus:ring-blue-500 disabled:cursor-not-allowed disabled:opacity-50 transition-colors duration-300 resize-none"
-                      placeholder="Share your professional journey, key achievements, and what makes you passionate about your field..."
+                      className="w-full px-3 py-2.5 sm:py-3 border border-input bg-transparent rounded-md text-base placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus:ring-blue-500 disabled:cursor-not-allowed disabled:opacity-50 transition-colors duration-300 resize-none"
+                      placeholder="Share your professional journey and experience..."
                     ></textarea>
                     <FieldDescription>0/500 characters</FieldDescription>
                   </Field>
@@ -139,7 +140,7 @@ export default function MentorApplicationSection() {
 
                 <FormInfoCard />
 
-                <Separator className="mt-6" />
+                <Separator className="mt-4 sm:mt-6" />
 
                 <SubmitButton />
               </FieldSet>

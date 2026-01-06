@@ -1,16 +1,18 @@
 export default function StepCard({ title, icon, description, number }) {
   return (
     <>
-      <div className="shrink-0 w-14 h-14 rounded-full bg-indigo-100 flex items-center justify-center">
+      <div className="shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-indigo-100 flex items-center justify-center">
         {icon}
       </div>
 
-      <div className="flex-1 pt-2">
-        <h3 className="text-2xl font-bold text-gray-900 mb-2">
+      <div>
+        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
           <span className="mr-2">{number}.</span>
           {title}
         </h3>
-        <p className="text-gray-600 text-lg leading-relaxed">{description}</p>
+        <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+          {description}
+        </p>
       </div>
     </>
   );

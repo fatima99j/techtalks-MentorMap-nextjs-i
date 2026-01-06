@@ -34,7 +34,7 @@ export default function TheSolution() {
       {/* Left Side */}
 
       {/* Image order-1 */}
-      <div className="order-2 lg:order-1 h-[500px] relative flex-1 shadow-2xl overflow-hidden self-center">
+      <div className="order-2 lg:order-1 h-[300px] sm:h-[400px] md:h-[500px] relative flex-1 shadow-2xl overflow-hidden self-center">
         <Image
           src={SolutionImage}
           alt="Confused student looking at laptop screen with multiple career path options, frustrated expression, modern workspace, professional photography"
@@ -53,7 +53,7 @@ export default function TheSolution() {
           icon={<FontAwesomeIcon icon={faCircleCheck} />}
         />
         <div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
             Bridge the Gap with MentorMap
           </h2>
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">

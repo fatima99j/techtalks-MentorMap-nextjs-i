@@ -66,7 +66,7 @@ export default function HowItWorks() {
             label="Simple Process"
             icon={<FontAwesomeIcon icon={faGears} />}
           />
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
             How MentorMap Works
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -75,11 +75,14 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center justify-center">
           {/* Steps list */}
           <div className="flex flex-col gap-8 items-center">
             {steps.map((step) => (
-              <div key={step.number} className="flex gap-8 items-start">
+              <div
+                key={step.number}
+                className="flex gap-4 sm:gap-6 md:gap-8 items-start"
+              >
                 <StepCard
                   title={step.title}
                   icon={step.icon}
@@ -90,13 +93,13 @@ export default function HowItWorks() {
             ))}
           </div>
 
-          <div className="relative scale-90 aspect-square w-full rounded-2xl shadow-2xl">
+          <div className="relative h-[300px] sm:h-[400px] md:h-[500px] sm:scale-90 aspect-square w-full rounded-2xl shadow-2xl">
             <Image
               src={StepsImage}
               alt="A happy student using MentorMap"
               fill
               placeholder="blur"
-              className="object-cover rounded-2xl"
+              className="object-cover object-top rounded-2xl"
             />
           </div>
         </div>
